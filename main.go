@@ -24,8 +24,8 @@ func main() {
 		}
 	})
 
-	log.Println("listening for traces on 127.0.0.1:8126")
-	err := http.ListenAndServe("127.0.0.1:8126", nil)
+	log.Println("listening for traces on :8126")
+	err := http.ListenAndServe(":8126", nil)
 	if err != nil {
 		panic(err)
 	}
